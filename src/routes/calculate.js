@@ -2,7 +2,12 @@ const express = require('express'); // Import Express to create a router
 const router = express.Router();    // Create an Express router instance
 const flightPathService = require('../services/flightPathService'); // Import flight path calculation service
 
-// Define a POST route for calculating flight paths
+/**
+ * POST / - Calculate flight path based on provided flights.
+ *
+ * Expects an array of flights in the request body. Each flight is defined
+ * by a source and destination airport code.
+ */
 router.post('/', (req, res) => {
   const { flights } = req.body;  // Extract 'flights' array from the request body
 
@@ -12,12 +17,13 @@ router.post('/', (req, res) => {
   }
 
   try {
-    // Call flightPathService
+    // Calculate the flight path using the service
     const flightPath = flightPathService.calculateFlightPath(flights);
 
     // Send the calculated flight path as the response in JSON format
     res.json({ flightPath });
   } catch (error) {
+    // Handle any errors that occur during calculation
     res.status(400).json({ error: error.message });
   }
 });

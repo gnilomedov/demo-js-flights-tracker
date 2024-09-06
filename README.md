@@ -9,12 +9,23 @@ volumefi-takehome-gnilomedov-20240906/
 ├── src/
 │   ├── server.js
 │   ├── routes/
-│   │   └── calculate.js
+│   │   └── flightRoutes.js
+│   ├── controllers/
+│   │   └── flightController.js
 │   ├── services/
 │   │   └── flightPathService.js
+│   └── utils/
+│       └── flightPathUtils.js
 ├── tests/
-│   ├── services/
-│   │   └── flightPathService.test.js
+│   ├── integration/
+│   │   └── flightRoutes.test.js
+│   └── unit/
+│       ├── controllers/
+│       │   └── flightController.test.js
+│       ├── services/
+│       │   └── flightPathService.test.js
+│       └── utils/
+│           └── flightPathUtils.test.js
 ├── package.json
 └── README.md
 ```

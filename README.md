@@ -100,10 +100,56 @@ curl -X POST http://localhost:8080/calculate \
 
 ## Time Spent
 
-TODO
-[Developer to fill in the time spent on the project]
+- **Total Time Spent**: Approximately 7 hours (including breaks for lunch and gym)
+
+### Breakdown:
+- **Microservice Setup**: 1.5 hours
+  - Set up the basic project structure and Express server.
+  - Configured dotenv for environment variables and set up initial routes.
+
+- **Algorithm Implementation**: 1.5 hours
+  - Implemented the `buildFlightGraph` and `findEulerianPath` functions.
+  - Developed the `calculateFlightPath` service.
+
+- **Unit Tests**: 1.5 hours
+  - Wrote unit tests for `flightPathService` and `flightPathUtils`.
+  - Ensured coverage for all critical functions.
+
+- **Integration Tests**: 1 hour
+  - Developed integration tests for the `/calculate` API endpoint.
+  - Validated API responses and error handling.
+
+- **TDD Resources Used**:
+  - Official documentation for Express.js and Jest.
+  - Online tutorials for TDD best practices.
+
+- **Additional Time**: 0.5 hours
+  - Reviewed and refined code.
+  - Addressed edge cases and minor issues.
 
 ## Interesting Ideas
 
-TODO
-[Developer to share any interesting ideas or challenges faced during development]
+- **User Accounts and Authentication**
+  - **Description**: Implement secure user accounts and authentication mechanisms.
+  - **Why**: Enhances security and allows for personalized user experiences.
+  - **Priority**: Highest
+
+- **Caching for Frequently Requested Flight Paths**
+  - **Description**: Cache popular or recently requested flight paths to improve performance.
+  - **Why**: Reduces response time and server load for frequently accessed data.
+  - **Priority**: High
+
+- **Rate Limiting and Quotas**
+  - **Description**: Implement rate limits and usage quotas for API consumers.
+  - **Why**: Prevents abuse, manages system load, and ensures fair access.
+  - **Priority**: Medium
+
+- **Enhanced Error Handling and User Feedback**
+  - **Description**: Develop detailed error messages and user-friendly feedback mechanisms.
+  - **Why**: Improves user experience by providing clear information on issues.
+  - **Priority**: Medium
+
+- **Logging and Monitoring**
+  - **Description**: Set up comprehensive logging and monitoring for system performance and errors.
+  - **Why**: Aids in troubleshooting, performance analysis, and ensures system reliability.
+  - **Priority**: Lower

@@ -5,7 +5,7 @@ This microservice API helps track and calculate a person's flight path based on 
 ## Project Structure
 
 ```
-volumefi-takehome-gnilomedov-20240906/
+demo-js-flights-tracker/
 ├── src/
 │   ├── server.js
 │   ├── routes/
@@ -41,7 +41,7 @@ volumefi-takehome-gnilomedov-20240906/
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/gnilomedov/volumefi-takehome-gnilomedov-20240906
+   git clone https://github.com/gnilomedov/demo-js-flights-tracker
    ```
 2. Install dependencies:
    ```sh
